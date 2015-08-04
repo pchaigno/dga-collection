@@ -22,6 +22,14 @@ Source:
 
 """
 class ZeusBot(DGAMalware):
+
+  """
+  The lifetime of ZeusBot's DGA domains if 7 by default
+  but they also change on the first of the month.
+  """
+  @classmethod
+  def domainsLifetime(self):
+    return 7 * 24 * 3600
   
   @classmethod
   def domainsFor(self, date):

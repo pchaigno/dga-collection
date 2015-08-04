@@ -20,6 +20,10 @@ Source:
 class Necurs(DGAMalware):
 
   @classmethod
+  def domainsLifetime(self):
+    return 4 * 24 * 3600
+
+  @classmethod
   def domainsFor(self, date):
     domains = []
     for sequence_nr in range(2048):

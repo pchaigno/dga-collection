@@ -45,6 +45,10 @@ Source:
 class Symmi(DGAMalware):
 
   @classmethod
+  def domainsLifetime(self):
+    return days_period * 24 * 3600
+
+  @classmethod
   def domainsFor(self, date):
     seed = self.create_seed(date)
     return self.dga(seed, '.ddns.net', nr_of_domains)

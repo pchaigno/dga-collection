@@ -46,6 +46,16 @@ class TestDGAs(unittest.TestCase):
     self.assertTrue(Necurs.couldUseDomain('ultrttvbvjaanrj.jp'))
     self.assertTrue(Symmi.couldUseDomain('baugkoosdui.ddns.net'))
 
+  """Checks the lifetime value of domains for each DGA.
+
+  """
+  def testDomainLifetime(self):
+    self.assertEqual(86400, Torpig.domainsLifetime())
+    self.assertEqual(7 * 86400, ZeusBot.domainsLifetime())
+    self.assertEqual(86400, Cryptolocker.domainsLifetime())
+    self.assertEqual(4 * 86400, Necurs.domainsLifetime())
+    self.assertEqual(16 * 86400, Symmi.domainsLifetime())
+
   """Checks that each DGA returns the expected number of domains for the current day.
 
   """
