@@ -79,8 +79,14 @@ class Symmi(DGAMalware):
   def create_seed(self, date):
     return 10000 * (date.day // days_period * 100 + date.month) + date.year + seed_const
 
+  """
+  Symmi's domains don't contain j, y or z letters.
+  """
   @classmethod
   def couldUseDomain(self, domain):
     if not domain.endswith('.ddns.net'):
+      return False
+    label = domain.split('.', 1)[0]
+    if 'j' in label or 'y' in label or 'z' in label:
       return False
     return not any(char.isdigit() for char in domain)
