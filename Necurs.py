@@ -72,4 +72,9 @@ class Necurs(DGAMalware):
         break
     if not useTLD:
       return False
+
+    label = domain.split('.', 1)[0]
+    if 'z' in label:
+      return False
+
     return not any(char.isdigit() for char in domain)
