@@ -36,7 +36,7 @@ Necurs.couldUseDomain('boymlujtgp.nu')
 
 This project is under [MIT license](LICENSE).
 
-It uses results from reverse-engineering analysis published on various blogs including:
+It uses results from reverse-engineering analyses published on various blogs including:
 - [Johannes Bader's blog](http://www.johannesbader.ch)
 - [VRT blog](http://vrt-blog.snort.org)
 - [Fortinet blog](https://blog.fortinet.com)
