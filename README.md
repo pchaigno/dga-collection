@@ -6,6 +6,7 @@ A collection of known Domain Generation Algorithms:
 - [Cryptolocker](https://blog.fortinet.com/post/a-closer-look-at-cryptolocker-s-dga)
 - [Necurs](http://www.johannesbader.ch/2015/02/the-dgas-of-necurs/)
 - [Symmi](http://www.johannesbader.ch/2015/01/the-dga-of-symmi/)
+- [Ranbyus](http://www.johannesbader.ch/2015/05/the-dga-of-ranbyus/)
 
 
 ## Usage

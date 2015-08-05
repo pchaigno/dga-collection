@@ -7,6 +7,7 @@ from Torpig import Torpig
 from ZeusBot import ZeusBot
 from Necurs import Necurs
 from Symmi import Symmi
+from Ranbyus import Ranbyus
 
 
 """Examples of domains.
@@ -29,6 +30,10 @@ necurs_domains = ['19/02/2015',
                   'imgirmyddbsniuh.pw', 'ultrttvbvjaanrj.jp', 'porgtemsbycy.ki']]
 symmi_domains = ['20/12/2015', 
                   ['veeswaehsisa.ddns.net', 'uhbacoinm.ddns.net', 'baugkoosdui.ddns.net']]
+ranbyus_domains = ['19/05/2015',
+                  ['hcfoopojnuqxho.su', 'undrdsbhivryqn.tw', 'dkehliueofdued.net',
+                  'mpuakxjqpscfpj.com', 'eelolbwmfmtkae.pw', 'noppsmyiijqujh.in',
+                  'joxrsxwdybbgqb.me']]
 
 
 """Performs a few unit tests on the DGA classes.
@@ -45,6 +50,7 @@ class TestDGAs(unittest.TestCase):
     self.assertTrue(Cryptolocker.couldUseDomain('gfrtgcfgvopvgg.co.uk'))
     self.assertTrue(Necurs.couldUseDomain('ultrttvbvjaanrj.jp'))
     self.assertTrue(Symmi.couldUseDomain('baugkoosdui.ddns.net'))
+    self.assertTrue(Ranbyus.couldUseDomain('hcfoopojnuqxho.su'))
 
   """Checks the lifetime value of domains for each DGA.
 
@@ -55,6 +61,7 @@ class TestDGAs(unittest.TestCase):
     self.assertEqual(86400, Cryptolocker.domainsLifetime())
     self.assertEqual(4 * 86400, Necurs.domainsLifetime())
     self.assertEqual(16 * 86400, Symmi.domainsLifetime())
+    self.assertEqual(86400, Ranbyus.domainsLifetime())
 
   """Checks that each DGA returns the expected number of domains for the current day.
 
@@ -65,6 +72,7 @@ class TestDGAs(unittest.TestCase):
     self.assertEqual(1000, len(Cryptolocker.domains()))
     self.assertEqual(2048, len(Necurs.domains()))
     self.assertEqual(64, len(Symmi.domains()))
+    self.assertEqual(40, len(Ranbyus.domains()))
 
   """Checks the presence of a few known domains for a given date.
 
@@ -91,6 +99,7 @@ class TestDGAs(unittest.TestCase):
     self.assertTrue(checkDomains(ZeusBot, zeusbot_domains))
     self.assertTrue(checkDomains(Necurs, necurs_domains))
     self.assertTrue(checkDomains(Symmi, symmi_domains))
+    self.assertTrue(checkDomains(Ranbyus, ranbyus_domains))
 
 
 if __name__ == '__main__':
