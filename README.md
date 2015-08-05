@@ -32,6 +32,11 @@ Necurs.couldUseDomain('boymlujtgp.nu')
 ```
 
 
+## Contributing
+
+Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for instructions on how to add a new DGA.
+
+
 ## License
 
 This project is under [MIT license](LICENSE).
