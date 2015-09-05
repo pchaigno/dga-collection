@@ -1,6 +1,6 @@
 # DGA Collection
 
-A collection of known Domain Generation Algorithms:
+A collection of known [Domain Generation Algorithms](https://en.wikipedia.org/wiki/Domain_generation_algorithm):
 - [Torpig](https://seclab.cs.ucsb.edu/media/uploads/papers/torpig.pdf)
 - [ZeusBot](http://vrt-blog.snort.org/2014/03/decoding-domain-generation-algorithms.html)
 - [Cryptolocker](https://blog.fortinet.com/post/a-closer-look-at-cryptolocker-s-dga)
