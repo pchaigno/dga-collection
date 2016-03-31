@@ -2,12 +2,12 @@
 import unittest
 from datetime import datetime, timedelta
 
-from Cryptolocker import Cryptolocker
-from Torpig import Torpig
-from ZeusBot import ZeusBot
-from Necurs import Necurs
-from Symmi import Symmi
-from Ranbyus import Ranbyus
+from dgacollection.Cryptolocker import Cryptolocker
+from dgacollection.Torpig import Torpig
+from dgacollection.ZeusBot import ZeusBot
+from dgacollection.Necurs import Necurs
+from dgacollection.Symmi import Symmi
+from dgacollection.Ranbyus import Ranbyus
 
 
 """Examples of domains.
