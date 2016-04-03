@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from DGAMalware import DGAMalware
+from dgacollection.DGAMalware import DGAMalware
 
 """A few constants for the Ranbyus' DGA.
 

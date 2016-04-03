@@ -3,7 +3,7 @@ import datetime
 import sys
 import hashlib
 
-from DGAMalware import DGAMalware
+from dgacollection.DGAMalware import DGAMalware
 
 """A few constants for that DGA.
 
