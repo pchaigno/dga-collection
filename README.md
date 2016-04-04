@@ -1,6 +1,7 @@
 # DGA Collection
 
 [![Build Status](https://travis-ci.org/pchaigno/dga-collection.svg?branch=master)](https://travis-ci.org/pchaigno/dga-collection)
+[![Coverage Status](https://coveralls.io/repos/github/pchaigno/dga-collection/badge.svg?branch=master)](https://coveralls.io/github/pchaigno/dga-collection?branch=master)
 
 A collection of known [Domain Generation Algorithms](https://en.wikipedia.org/wiki/Domain_generation_algorithm):
 - [Torpig](https://seclab.cs.ucsb.edu/media/uploads/papers/torpig.pdf)
